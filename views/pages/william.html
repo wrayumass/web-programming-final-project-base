@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Conversation Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/darkly/bootstrap.min.css">
+    <link rel="stylesheet" href="conversation_style.css">
+</head>
+
+<body>
+    <h1 class="mt-3 ml-3">Conversation Page</h1>
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-5 mt-3 ml-3">
+            <h2>Chat history with Peter</h2>
+            <div class="row">
+                <div class="col-2">
+                    <div class="convo mb-3">
+                        Convo 1
+                    </div>
+                    <div class="convo mb-3">
+                        Convo 2
+                    </div>
+                    <div class="convo mb-3">
+                        Convo 3
+                    </div>
+                    <div class="convo mb-3">
+                        Convo 4
+                    </div>
+                    <div class="convo mb-3">
+                        Convo 5
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="convo-content">
+                        Conversation Content
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col">
+                            <textarea id="convo-input">
+
+                            </textarea>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-primary">Random Ice-Breaker</button>
+                            <br>
+                            <button class="btn btn-primary mt-1">Send</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-5 mt-3 ml-3 mr-3">
+            <h2>Meet Peter</h2>
+            <div class="row">
+                <div class="col">
+                    <img class="img-thumbnail" src="https://www.cics.umass.edu/sites/default/files/styles/people_individual/public/headshots/peterklemperer.jpg?itok=iqdpfoGm">
+                </div>
+                <div class="col">
+                    Peter Klemperer was most recently an assistant professor of computer science at Mount Holyoke College. He is interested in all aspects of computer security, with an emphasis on virtualized systems and usability, including how virtualization can provide
+                    an isolated high ground position for malware detection in operating systems and processes. He received his doctorate at Carnegie Mellon University in 2014, and a master's degree from the University of Illinois at Urbana-Champaign in
+                    2008.
+                </div>
+            </div>
+            <h3 class="mt-3">For this question:</h3>
+            <p>What is so special about dolphins?</p>
+            <h3>You both answered:</h3>
+            <p id="reaction" class="text-success">I love it!</p>
+            <h3>Heres their reasoning:</h3>
+            <p>Dolphins are extraordinarily intelligent animals who also display culture, something which was long-believed to be unique to humans (although now recognised in various species). ... Dolphins are altruistic animals. They are known to stay and
+                help injured individuals, even helping them to the surface to breath.</p>
+            <h3>Wanna talk to them about it?</h3>
+            <div class="row">
+                <div class="col-2">
+                    <button class="btn btn-primary">Yeah!</button>
+                </div>
+                <div class="col">
+                    <button class="btn btn-primary">No thanks... Show me someone new!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
