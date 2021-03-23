@@ -259,6 +259,8 @@ express()
 
 .get("/william", (req, res) => res.render('pages/william'))
 
+.get("/arnesh", (req, res) => res.render('pages/arnesh'))
+
 .listen(PORT, () => console.log(`Listening on ${ PORT }`))
 
 
