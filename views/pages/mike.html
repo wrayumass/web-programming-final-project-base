@@ -1,0 +1,75 @@
+<DOCTYPE html>
+    <html lang="en">
+        <meta charset="UTF-8">
+        <title class= "text-center">Same Page Home Page</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/darkly/bootstrap.min.css">
+        <style>
+            footer{
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 50px;
+            }
+
+            #coolPeopleTalk{
+                /*position: relative;*/
+                background-image: url("stockChats.jpg");
+                min-height: 300px;
+                text-align: center;
+            }
+
+            #tower{
+                width: 60%;
+                display: grid;
+                grid-template-columns: auto;
+            }
+
+            #aboutUs{
+                margin-top: 80px;
+                /*position: absolute;
+                top: 50%;
+                bottom: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                */
+            }
+        </style>
+        <body>
+            <div class = "text-center">
+                <h1>Same Page Home Page</h1>
+            </div>
+            <section class = "text-center">
+                <h3>Log In</h3>
+                <div class = "tower">
+                    <div class = "form-group">
+                        <label for = "userName">Username:</label>
+                        <input type = "text" id = "userName" name = "userName">
+                    </div>
+
+                    <div class = "form-group">
+                        <label for = "password">Password:</label>
+                        <input type = "text" id = "password" name = "password">
+                    </div>
+                    
+                    </div>
+                        <button class = "btn btn-primary" type="button">Log in</button>
+                        <buttom class = "btn btn-primary" type="button">Sign up!</buttom>
+                    </div>
+                    
+                    <div>
+                        <span>Having trouble signing in?</span> <br>
+                        <a href = "https://samepage/profile-customization">Forgot your username?</a><br><!--how are we implementing this? A separate page that will ask them to input their email? how about we just have them make a new account lol-->
+                        <a href = "https://samepage/profile-customization">Forgot your password?</a>
+                    </div>
+                </div>    
+            </section>
+            <div class = "text-center">
+                <h2>Meet cool people, <strong>cool people</strong></h2>
+            </div>   
+            <div id = "coolPeopleTalk">
+                <button id = "aboutUs" class = "btn btn-primary">About us</button>
+            </div><!--set image background of word block art/messages?-->
+            <footer>Bill, Omri, Jared, Arnesh, and Mike. March 22nd 2021.</footer>
+        </body>
+    </html>
