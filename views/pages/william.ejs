@@ -6,34 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Conversation Page</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/darkly/bootstrap.min.css">
+
     <link rel="stylesheet" href="william.css">
-    <!-- Didn't work -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="william.js"></script>
 </head>
-
-
-<!-- I couldn't get heroku to read from the CSS file so I moved the CSS into this file -->
-<style>
-    #convo-content {
-        background-color: white;
-        color: black;
-        height: 500px;
-    }
-    
-    #convo-input {
-        width: 100%;
-    }
-    
-    .convo {
-        background-color: lightslategrey;
-        text-align: center;
-        padding-top: 60%;
-    }
-    
-    #reaction {
-        font-size: 1.5em;
-        color: "success"
-    }
-</style>
 
 <body>
     <h1 class="mt-3 ml-3">Conversation Page</h1>
@@ -61,21 +39,17 @@
                 </div>
                 <div class="col">
                     <div id="convo-content">
-                        Conversation Content
                     </div>
                     <div class="row mt-3">
                         <div class="col">
-                            <textarea id="convo-input">
-
-                            </textarea>
+                            <textarea id="comment" rows="5" cols="50"></textarea>
                         </div>
                         <div class="col">
-                            <button class="btn btn-primary">Random Ice-Breaker</button>
+                            <button id="ice-breaker" class="btn btn-primary">Random Ice-Breaker</button>
                             <br>
-                            <button class="btn btn-primary mt-1">Send</button>
+                            <button id="send" class="btn btn-primary mt-1">Send</button>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
