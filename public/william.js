@@ -25,7 +25,7 @@ function recieve_message() {
     ]
 
     var message = messages[Math.floor(Math.random() * messages.length)];
-    show_chat_message("Peter", message, "left");
+    show_chat_message("Alex", message, "left");
     setTimeout(recieve_message, Math.floor(Math.random() * 10000));
 }
 
