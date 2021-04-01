@@ -2,6 +2,7 @@
     background-color: white;
     color: black;
     height: 500px;
+    overflow-y: auto;
 }
 
 #convo-input {
@@ -12,6 +13,24 @@
     background-color: lightslategrey;
     text-align: center;
     padding-top: 60%;
+}
+
+.right-chat {
+    max-width: 75%;
+    background-color: lightskyblue;
+    border-radius: 4px;
+    margin-left: 2%;
+    margin-top: 2%;
+    padding: 4px;
+}
+
+.left-chat {
+    max-width: 75%;
+    background-color: lightgreen;
+    border-radius: 4px;
+    margin-left: 2%;
+    margin-top: 2%;
+    padding: 4px;
 }
 
 #reaction {
