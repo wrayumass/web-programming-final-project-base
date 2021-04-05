@@ -4,6 +4,9 @@ function htmlEntities(str) {
 }
 
 function show_chat_message(sender, message, side) {
+    if (side === "right") {
+        recieve_message(message);
+    }
     message = htmlEntities(message);
     var convoContent = $("#convo-content")
     var history = convoContent.html();
@@ -12,21 +15,13 @@ function show_chat_message(sender, message, side) {
     convoContent.scrollTop(convoContent[0].scrollHeight);
 }
 
-function recieve_message() {
-    var messages = [
-        "Yes",
-        "No",
-        "How fun!",
-        "Ew.",
-        "Oh my",
-        "Wowzers",
-        "Haha I think I've heard of that before",
-        "Cool, anyways, could you tell I've been a bot this whole time? The turing test has nothing on me!"
-    ]
-
-    var message = messages[Math.floor(Math.random() * messages.length)];
-    show_chat_message("Alex", message, "left");
-    setTimeout(recieve_message, Math.floor(Math.random() * 10000));
+function recieve_message(message) {
+    $.post("/william_backend", { "message": message }).done(data => {
+        reply = data.text;
+        setTimeout(() => {
+            show_chat_message("Alex", reply, "left");
+        }, Math.floor(Math.random() * 3000));
+    });
 }
 
 function on_ice_breaker_click() {
@@ -66,5 +61,5 @@ $(function() {
     });
 
     $("#ice-breaker").click(on_ice_breaker_click);
-    setTimeout(recieve_message, Math.floor(Math.random() * 10000));
+    // setTimeout(recieve_message, Math.floor(Math.random() * 10000));
 });

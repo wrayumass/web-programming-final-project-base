@@ -259,6 +259,22 @@ express()
 
 .get("/william", (req, res) => res.render('pages/william'))
 
+.post("/william_backend", (req, res) => {
+    // Super advanced language model that can only be run on the server
+    var messages = [
+        "Yes",
+        "No",
+        "How fun!",
+        "Ew.",
+        "Oh my",
+        "Wowzers",
+        "Haha I think I've heard of that before",
+        "Cool, anyways, could you tell I've been a bot this whole time? The turing test has nothing on me!"
+    ]
+    var message = messages[Math.floor(Math.random() * messages.length)];
+    res.send({ "text": message });
+})
+
 .get("/arnesh", (req, res) => res.render('pages/arnesh'))
 
 .get("/mike", (req, res) => res.render('pages/mike'))
