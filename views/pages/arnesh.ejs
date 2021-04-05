@@ -1,45 +1,17 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Dashboard</title>
     <link rel="stylesheet" href="arnesh.css">
+    <script src="arnesh.js"></script>
 </head>
-
-<style>
-    h1 {
-        color: lightpink;
-        text-align: center;
-        font-size: 75px;
-    }
-    
-    body {
-        text-align: center;
-        background-color: rgb(42, 63, 100);
-        color: lightpink;
-    }
-    
-    button {
-        background-color: rgb(255, 211, 17);
-        color: black;
-        padding: 30px 45px;
-        text-align: center;
-        display: inline-block;
-        font-size: 24px;
-    }
-    
-    button:hover {
-        background-color: rgb(255, 194, 80);
-        color: black;
-    }
-</style>
-
 <body>
-    <h1>Dashboard Page</h1>
-    <button type="button" name="profile">My Profile</button><br><br><br>
-    <button type="button" name="convos">Conversations</button><br><br><br>
-    <button type="button" name="faq">FAQ</button><br><br><br>
-    <button type="button" name="lout">Log Out</button><br><br><br>
+    <h1>Dashboard</h1>
+    <button type="button" name="profile" onclick="visitProfile();">My Profile</button><br><br><br>
+    <button type="button" name="convos" onclick="visitConv();">Conversations</button><br><br><br>
+    <button type="button" name="faq" onclick="visitFAQ();">FAQ</button><br><br><br>
+    <button type="button" name="lout" onclick="visitLogIn();">Log Out</button><br><br><br>
     <p>You have X convos</p>
     <p>In total, X people answered your questions</p><br><br>
 </body>
+
