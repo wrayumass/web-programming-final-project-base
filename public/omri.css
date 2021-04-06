@@ -1,0 +1,63 @@
+body {
+    background-color: #2E6387;
+}
+
+.question{
+    background-color: #FBE199;
+    height:39vh;
+    border:5px solid black;
+    border-radius: 7px;
+}
+
+#previousAnswers{
+    background-color: #FFC0CB;
+    color: black;
+    overflow-y: scroll;
+    height: 65vh;
+    border-radius: 20px;
+}
+
+#profile{
+    background-color: #FBE199;
+    height:23vh;
+    border-radius: 20px;
+}
+
+textarea {
+    resize: none;
+}
+
+#pfp{
+    height:23vh;
+    width:23vh;
+    object-fit: cover;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-radius: 11.5vh;
+}
+
+#pfpMask{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 17%;
+    left: 2%;
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#pfpContainer:hover #pfp{
+    opacity: 0.3;
+}
+
+#pfpContainer:hover #pfpMask{
+    opacity: 1;
+}
+
+#pfpButton{
+    background-color: #4CAF50;
+    color: white;
+    font-size: 2vh;
+    padding: 1vh 3vh;
+}

@@ -1,0 +1,225 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/darkly/bootstrap.min.css">
+    <link rel="stylesheet" href="omri.css">
+</head>
+
+<body class="m-3">
+    <div class="row">
+        <!-- previous answer "form" which users can edit-->
+        <form class="col m-4">
+            <h2>Previous Answers (Edit):</h2>
+            <div id="previousAnswers">
+                <!-- first question-->
+                <div class="question m-4">
+                    <!-- button to delete this question-->
+                    <button class="btn btn-danger close-question" type="button">x</button>
+                    <!-- label-->
+                    <h3 class="text-center">What do you think about: <br><em>pineapple on pizza</em>?</h3>
+                    <!-- radio buttons -->
+                    <div class="row">
+                        <div class="col-4 text-center">
+                            <input type="radio" id="loveIt1" name="q1radio" class="custom-control-input">
+                            <label for="loveIt1" class="custom-control-label">
+                                Love it!
+                            </label>
+                        </div>
+                        <div class="col-4 text-center">
+                            <input type="radio" id="hateIt1" name="q1radio" class="custom-control-input">
+                            <label for="hateIt1" class="custom-control-label">
+                                Hate it!
+                            </label>
+                        </div>
+                        <div class="col-4 text-center">
+                            <input type="radio" id="whats1" name="q1radio" class="custom-control-input">
+                            <label for="whats1" class="custom-control-label">
+                                Whats that?
+                            </label>
+                        </div>
+                    </div>
+                    <!-- elaborate section-->
+                    <div class="ml-3 mr-3 mb-5">
+                        <label for="elaborate1">Please, elaborate:</label>
+                        <textarea id="elaborate1" rows="3" class="form-control"></textarea>
+                    </div>
+                </div>
+                <!-- second question-->
+                <div class="question m-4">
+                    <!-- button to delete this question-->
+                    <button class="btn btn-danger close-question" type="button">x</button>
+                    <!-- label-->
+                    <h3 class="text-center">What do you think about: <br><em>NBC's TV sitcom, Friends</em>?</h3>
+                    <!-- radio buttons -->
+                    <div class="row">
+                        <div class="col-4 text-center">
+                            <input type="radio" id="loveIt2" name="q2radio" class="custom-control-input">
+                            <label for="loveIt2" class="custom-control-label">
+                                Love it!
+                            </label>
+                        </div>
+                        <div class="col-4 text-center">
+                            <input type="radio" id="hateIt2" name="q2radio" class="custom-control-input">
+                            <label for="hateIt2" class="custom-control-label">
+                                Hate it!
+                            </label>
+                        </div>
+                        <div class="col-4 text-center">
+                            <input type="radio" id="whats2" name="q2radio" class="custom-control-input">
+                            <label for="whats2" class="custom-control-label">
+                                Whats that?
+                            </label>
+                        </div>
+                    </div>
+                    <!-- elaborate section-->
+                    <div class="ml-3 mr-3 mb-5">
+                        <label for="elaborate2" class="text-center">Please, elaborate:</label>
+                        <textarea id="elaborate2" rows="3" class="form-control"></textarea>
+                    </div>
+                </div>
+                <!-- third question-->
+                <div class="question m-4">
+                    <!-- button to delete this question-->
+                    <button class="btn btn-danger close-question" type="button">x</button>
+                    <!-- label-->
+                    <h3 class="text-center">What do you think about: <br><em>the oxford comma</em>?</h3>
+                    <!-- radio buttons -->
+                    <div class="row">
+                        <div class="col-4 text-center">
+                            <input type="radio" id="loveIt3" name="q3radio" class="custom-control-input">
+                            <label for="loveIt3" class="custom-control-label">
+                                Love it!
+                            </label>
+                        </div>
+                        <div class="col-4 text-center">
+                            <input type="radio" id="hateIt3" name="q3radio" class="custom-control-input">
+                            <label for="hateIt3" class="custom-control-label">
+                                Hate it!
+                            </label>
+                        </div>
+                        <div class="col-4 text-center">
+                            <input type="radio" id="whats3" name="q3radio" class="custom-control-input">
+                            <label for="whats3" class="custom-control-label">
+                                Whats that?
+                            </label>
+                        </div>
+                    </div>
+                    <!-- elaborate section-->
+                    <div class="ml-3 mr-3 mb-5">
+                        <label for="elaborate3" class="text-center">Please, elaborate:</label>
+                        <textarea id="elaborate3" rows="3" class="form-control"></textarea>
+                    </div>
+                </div>
+                <!-- fourth question-->
+                <div class="question m-4">
+                    <!-- button to delete this question-->
+                    <button class="btn btn-danger close-question" type="button">x</button>
+                    <!-- label-->
+                    <h3 class="text-center">What do you think about: <br><em>Friday by Rebecca Black</em>?</h3>
+                    <!-- radio buttons -->
+                    <div class="row">
+                        <div class="col-4 text-center">
+                            <input type="radio" id="loveIt4" name="q4radio" class="custom-control-input">
+                            <label for="loveIt4" class="custom-control-label">
+                                Love it!
+                            </label>
+                        </div>
+                        <div class="col-4 text-center">
+                            <input type="radio" id="hateIt4" name="q4radio" class="custom-control-input">
+                            <label for="hateIt4" class="custom-control-label">
+                                Hate it!
+                            </label>
+                        </div>
+                        <div class="col-4 text-center">
+                            <input type="radio" id="whats4" name="q4radio" class="custom-control-input">
+                            <label for="whats4" class="custom-control-label">
+                                Whats that?
+                            </label>
+                        </div>
+                    </div>
+                    <!-- elaborate section-->
+                    <div class="ml-3 mr-3 mb-5">
+                        <label for="elaborate4" class="text-center">Please, elaborate:</label>
+                        <textarea id="elaborate4" rows="3" class="form-control"></textarea>
+                    </div>
+                </div>
+                <!-- fifth question-->
+                <div class="question m-4 ">
+                    <!-- button to delete this question-->
+                    <button class="btn btn-danger close-question" type="button">x</button>
+                    <!-- label-->
+                    <h3 class="text-center">What do you think about: <br><em>premarital eye contact</em>?</h3>
+                    <!-- radio buttons -->
+                    <div class="row">
+                        <div class="col-4 text-center">
+                            <input type="radio" id="loveIt5" name="q5radio" class="custom-control-input">
+                            <label for="loveIt5" class="custom-control-label">
+                                Love it!
+                            </label>
+                        </div>
+                        <div class="col-4 text-center">
+                            <input type="radio" id="hateIt5" name="q5radio" class="custom-control-input">
+                            <label for="hateIt5" class="custom-control-label">
+                                Hate it!
+                            </label>
+                        </div>
+                        <div class="col-4 text-center">
+                            <input type="radio" id="whats5" name="q5radio" class="custom-control-input">
+                            <label for="whats5" class="custom-control-label">
+                                Whats that?
+                            </label>
+                        </div>
+                    </div>
+                    <!-- elaborate section-->
+                    <div class="ml-3 mr-3 mb-5">
+                        <label for="elaborate5" class="text-center">Please, elaborate:</label>
+                        <textarea id="elaborate5" rows="3" class="form-control"></textarea>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-warning mb-2">Update previous answers</button>
+        </form>
+        <div class="col m-4">
+            <!-- Profile pic & bio -->
+            <h2>Profile (Edit):</h2>
+            <form id="profile" class="row">
+                <!-- profile picture -->
+                <label for="pfpInput" id="pfpContainer" class="mr-2">
+                    <input type="file" accept="image/*" id="pfpInput" style="display: none">
+                    <img src="https://d3bzyjrsc4233l.cloudfront.net/news/Harold.jpg" alt="Your profile picture." id="pfp">
+                    <div id="pfpMask">
+                        <div id="pfpButton">Upload new <br>profile picture</div>
+                    </div>
+                </label>
+                <!-- username and bio -->
+                <div>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <label for="bio"></label>
+                    <textarea id="bio" placeholder="Write a short biography" class="form-control" style="width:33vw; height:12vh; border-radius:10px"></textarea>
+                    <button type="submit" class="btn btn-warning mb-2">Update profile</button>
+                </div>
+            </form>
+            <h2>New Subjects</h2>
+            <div class="row-4" style="background-color: green; height:27vh">
+
+            </div>
+            <h2>Ask a new question!</h2>
+            <div class="row-4" style="background-color: blue; height:27vh">
+                artichokie
+            </div>
+        </div>
+    </div>
+</body>
+<!--THIS SCRIPT IS TEMPORARY! -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="omri.js"></script>
+
+</html>
