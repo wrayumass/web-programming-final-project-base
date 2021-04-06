@@ -18,6 +18,7 @@ function show_chat_message(sender, message, side) {
 function recieve_message(message) {
     $.post("/william_backend", { "message": message }).done(data => {
         reply = data.text;
+        // Don't text back too fast. Gotta play it cool and wait up to 3 seconds.
         setTimeout(() => {
             show_chat_message("Alex", reply, "left");
         }, Math.floor(Math.random() * 3000));
